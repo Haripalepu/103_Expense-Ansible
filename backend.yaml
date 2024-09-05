@@ -49,7 +49,7 @@
       src: backend.service
       dest: /etc/systemd/system/backend.service
 
-  - name: ansible to install pymysql
+  - name: ansible to install pymysql #Dependency packages
     ansible.builtin.pip:
       name:
       - PyMySQL
